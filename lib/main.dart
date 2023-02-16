@@ -82,6 +82,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () {
                   if(messageController.text != null){
                     sendMessageToTelegram(messageController.text);
+                  }else{
+                    // do nothing
                   }
                 },
                 child: Text(
